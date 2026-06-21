@@ -123,8 +123,8 @@ def process_mail():
                     filename = part.get_filename()
                     if not filename:
                     # Если имя не задано — генерируем его сами
-                    ext = part.get_content_subtype()  # jpeg, png, etc.
-                    filename = f"image.{ext}"
+                        ext = part.get_content_subtype()  # jpeg, png, etc.
+                        filename = f"image.{ext}"
                     else:
                         filename = decode_mime_words(filename)
                     attachments.append((filename, part.get_payload(decode=True)))
