@@ -122,7 +122,7 @@ def process_mail():
                 elif "attachment" in content_disposition or "inline" in content_disposition:
                     filename = part.get_filename()
                     if not filename:
-                    # Если имя не задано — генерируем его сами
+                        # Если имя не задано — генерируем его сами
                         ext = part.get_content_subtype()  # jpeg, png, etc.
                         filename = f"image.{ext}"
                     else:
