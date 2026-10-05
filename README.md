@@ -1,4 +1,4 @@
-# MailBot RIS-25-2
+# MailBot RIS-25-1
 
 Пересылка писем из Mail.ru в Telegram-группу через GitHub Actions.
 
